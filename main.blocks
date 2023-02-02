@@ -1,0 +1,96 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="5@5=L^JJbdXB;{5..3XV">index</variable><variable id="}B+Fm{hl]RXiwgDhF]fF">myImage</variable><variable id="_(LcY+O2L#$*F)Z[KGx6">countDown</variable></variables><block type="pxt-on-start" id=".idojr)FL0+_[csc[i~W" x="0" y="0"><comment pinned="true" h="391" w="233">Rubric
+- Part of the message scrolls
+- Uses letters, numbers, or symbols
+- Displays at least one image
+- Displays at least one animation (a sequence of images to show movement)
+
+ON START 
+Set countDown variable to 0
+Then an arrow shape slowly appears by scrolling towards Button A. </comment><statement name="HANDLER"><block type="variables_set" id="j|2tx1(S3QR=Ch9.c3Hs"><field name="VAR" id="_(LcY+O2L#$*F)Z[KGx6">countDown</field><value name="VALUE"><shadow type="math_number" id="+8!t8i9g[Je:Zf$XM*(["><field name="NUM">0</field></shadow></value><next><block type="controls_repeat_ext" id="wLRm7Gh,k$aurevrM6HY"><value name="TIMES"><shadow type="math_whole_number" id="0iOi/`:AWnCNayZpDeq%"><field name="NUM">1</field></shadow></value><statement name="DO"><block type="device_show_leds" id="L%H+w=A)PH)?Uostegl4"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="JA9NdA%bO^vHm*}zqvCX"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . # 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="Vc3_[@[|M[:x.3Sst}U!"><field name="LEDS">`
+        . . . . . 
+        . . . . # 
+        . . . # . 
+        . . . . # 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="*kfM2M+pOoD|PM!=V;SF"><field name="LEDS">`
+        . . . . # 
+        . . . # . 
+        . . # . # 
+        . . . # . 
+        . . . . #
+        `</field><next><block type="device_show_leds" id="1YHZ:S.jdGCJA.s[U(A/"><field name="LEDS">`
+        . . . # . 
+        . . # . . 
+        . # . # # 
+        . . # . . 
+        . . . # .
+        `</field><next><block type="device_show_leds" id="ae977z0N1U96fgPWmB/1"><field name="LEDS">`
+        . . # . . 
+        . # . . . 
+        # . # # # 
+        . # . . . 
+        . . # . .
+        `</field><next><block type="device_show_leds" id="zZ0UwFwiR6y`sIQ0FN%q"><field name="LEDS">`
+        . # . . . 
+        # . . . . 
+        . # # # . 
+        # . . . . 
+        . # . . .
+        `</field><next><block type="device_show_leds" id="Tdsb+R$]6-6RDRR+;-^~"><field name="LEDS">`
+        # . . . . 
+        . . . . . 
+        # # # . . 
+        . . . . . 
+        # . . . .
+        `</field><next><block type="device_show_leds" id="j3];bXv94H|L#0C#dMI9"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="y6wuOU4PUVusI*3B5qFY"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="K+K/jdsuD_WHH$fWPUEc"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></next></block></statement></block><block type="device_button_event" id="@=vO^b$n/QT+3=;o{s:l" x="456" y="2"><field name="NAME">Button.A</field><comment pinned="true" h="97" w="206">On Button A is pressed
+"GETREADY!" text scrolls
+
+
+
+</comment><statement name="HANDLER"><block type="device_print_message" id="Sz367~R#[H7J?}[`^[Mz"><value name="text"><shadow type="text" id="rDK!jaM*xQ?jk-hUKq$A"><field name="TEXT">GETREADY!</field></shadow></value><next><block type="pxt_controls_for" id="UEemRsQ#PT{:m2:R6keB"><comment pinned="true" h="84" w="278">Then index starts from 0 and stops at 3 by increasing in each loop.</comment><value name="VAR"><shadow type="variables_get_reporter" id="JRY%($hd_tgInX{MPT{U"><field name="VAR" id="5@5=L^JJbdXB;{5..3XV">index</field></shadow></value><value name="TO"><shadow type="math_whole_number" id="^swG[xjnPrWDml$Tl+B1"><field name="NUM">3</field></shadow></value><statement name="DO"><block type="controls_if" id=",k?)iYAI;O{K-R79!0g@"><comment pinned="true" h="110" w="216">If statement makes sure that the show number does not fall below 0 </comment><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="6zURO~HTY4LhB.G%HO$b"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_arithmetic" id="KLR5+|ss}x!YwqAiYWrh"><field name="OP">MINUS</field><value name="A"><shadow type="math_number" id="sZiv)e$).+S$zd467XnM"><field name="NUM">3</field></shadow></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="_u@L70joPrQsV0Je8uNY"><field name="VAR" id="_(LcY+O2L#$*F)Z[KGx6">countDown</field></block></value></block></value><value name="B"><shadow type="math_number" id="mZQ$g4juLDuh9F$:k~@I"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="device_show_number" id="*R:/YQ)L$A]eXQLQ2[bO"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_arithmetic" id="3w1-O(8SsnRM76zm-;_%"><field name="OP">MINUS</field><value name="A"><shadow type="math_number" id=";#/4_]ShS9xm]i{U;5#D"><field name="NUM">3</field></shadow></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="a0r=T.XOmt/n$L];}d~^"><field name="VAR" id="_(LcY+O2L#$*F)Z[KGx6">countDown</field></block></value></block></value><next><block type="variables_change" id="Vt/}g.}~s2pwG]c^)Sat"><field name="VAR" id="_(LcY+O2L#$*F)Z[KGx6">countDown</field><comment pinned="true" h="99" w="284">in each loop countDown variable increases by 1, starting from 0 on start</comment><value name="VALUE"><shadow type="math_number" id="uQJvpBht7=O|%nZ{#]lS"><field name="NUM">1</field></shadow></value></block></next></block></statement></block></statement></block></next></block></statement></block><block type="device_gesture_event" id="mphehO6Z}b;[c=EZin,p" x="286" y="436"><field name="NAME">Gesture.LogoDown</field><comment pinned="true" h="216" w="448">ON Logo Down
+This is activated when countDown variable is equal to 3. 
+Then it shows the image if user tilts the micro:bit away from itself</comment><statement name="HANDLER"><block type="controls_if" id="ueB$2?Crg9[9S2J]7OSb"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="#}Y)E(V8hi~_o#@mo`]T"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="a~cQ#UpcmBe7jS!d:@`L"><field name="VAR" id="_(LcY+O2L#$*F)Z[KGx6">countDown</field></block></value><value name="B"><shadow type="math_number" id="1EVey[]mmDInes5_FWg`"><field name="NUM">3</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="-hQKOX`}c$AK%G/FQ+VN"><field name="LEDS">`
+        # . # . # 
+        . # # # . 
+        . . # . . 
+        . # . # . 
+        # . . . #
+        `</field></block></statement></block></statement></block><block type="device_gesture_event" id="`z%KsVzl6NrMhv8qLX?[" x="280" y="850"><field name="NAME">Gesture.LogoUp</field><comment pinned="true" h="216" w="448">ON Logo Up
+This is activated when countDown variable is equal to 3. 
+Then it shows the image if user tilts the micro:bit towards itself</comment><statement name="HANDLER"><block type="controls_if" id="O0@%kr_$Tbo.Q4}cyeUY"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="InMbbueLq479)sv!C|`H"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="4OrcjLpff81z^QCBV[pH"><field name="VAR" id="_(LcY+O2L#$*F)Z[KGx6">countDown</field></block></value><value name="B"><shadow type="math_number" id="^4v2J=Kgh|RC.ScXUi}v"><field name="NUM">3</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="8b*#B.qE3H%0g~H]3xe|"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . # . # . 
+        . # . # .
+        `</field></block></statement></block></statement></block></xml>
